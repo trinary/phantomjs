@@ -243,8 +243,6 @@ FakeWorker.prototype = {
     {
         var scriptURL = new URL(baseURL).completeWith(url);
 
-        if (!scriptURL.sameOrigin(origin))
-            throw new DOMCoreException("SECURITY_ERR",18);
         return scriptURL;
     }
 };
